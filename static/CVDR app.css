@@ -1,0 +1,45 @@
+body{
+    background: #ff4000;
+    background: linear-gradient(180deg, rgba(255, 64, 0, 1) 0%, rgba(252, 164, 0, 1) 50%, rgb(255, 255, 255) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+}
+h1{
+    position: absolute;
+    top: -1%;
+    left: 22%;
+}
+input{
+    position: absolute;
+    left: 41%;
+    top: 10%;
+    border: solid 2px black;
+}
+img{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+button{
+    position: absolute;
+    left: 45%;
+    top: 90%;
+    width: 100px;
+    background: lightgreen;
+    border-radius: 50px;
+}
+button p{
+    font-weight: bold;
+}
+#answer{
+    position: absolute;
+    text-decoration: white;
+    top: 95%;
+    left: 43%;
+    font-size: 24px;
+}
+button:hover{
+    transition: background-color 1s;
+    background-color: rgb(188, 246, 188);
+}
