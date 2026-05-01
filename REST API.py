@@ -1,11 +1,11 @@
-from flask import Flask,render_template, request, url_for
+from flask import Flask,render_template, request
 from keras.models import load_model
 from PIL import Image
 from keras.utils import img_to_array
 import numpy as np
 app = Flask(__name__)
 model = load_model("CVDR_model.keras", compile=False)
-@app.route('/')
+@app.route('/', methods=["GET"])
 def index():
     return render_template("CVDR app.html")
 
@@ -13,7 +13,7 @@ def index():
 def checking():
     file=request.files['Image']
     img = Image.open(file)
-    test = np.array(img_to_array(img))
+    test = np.array(img_to_array(img.resize((512,512))))
     test = np.expand_dims(test, axis=0)
     prediction=model.predict(test) 
     prediction=np.argmax(prediction,axis=1)
