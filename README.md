@@ -18,10 +18,8 @@ This project demonstrates how to bridge the gap between Machine Learning and Web
 ## 📁 Project Structure
 ```text
 cat-dog-recognition/
-├── data/               # Dataset directory (train/validation)
-├── models/             # Saved TensorFlow models (.h5 or .keras)
 ├── static/             # Frontend assets (CSS, JS)
 ├── templates/          # HTML files (index.html)
-├── app.py              # Flask application script
-├── requirements.txt    # Python dependencies
+├── CVDR_model.keras             # Saved TensorFlow model
+├── REST_API.py         # Flask application script
 └── README.md           # Project documentation
