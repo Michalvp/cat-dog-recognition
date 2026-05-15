@@ -20,6 +20,6 @@ This project demonstrates how to bridge the gap between Machine Learning and Web
 cat-dog-recognition/
 ├── static/             # Frontend assets (CSS, JS)
 ├── templates/          # HTML files (index.html)
-├── CVDR_model.keras             # Saved TensorFlow model
+├── CVDR_model.keras    # Saved TensorFlow model
 ├── REST_API.py         # Flask application script
 └── README.md           # Project documentation
